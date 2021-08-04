@@ -55,15 +55,9 @@
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <li class="nav-item">
-                        <a href="desafio1" class="nav-link {{ Request::is('desafio1') || Request::is('desafio1/*') ? 'active' : '' }}">
+                        <a href="/desafio1" class="nav-link {{ Request::is('desafio1') || Request::is('desafio1/*') ? 'active' : '' }}">
                             <i class="far fa-file nav-icon"></i>
                             <p>Desafío 1</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="desafio4" class="nav-link {{ Request::is('desafio4')  ? 'active' : '' }}">
-                            <i class="far fa-file nav-icon"></i>
-                            <p>Desafío 4</p>
                         </a>
                     </li>
                     <li class="nav-item">

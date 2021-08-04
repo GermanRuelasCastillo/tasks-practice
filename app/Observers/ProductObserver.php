@@ -15,7 +15,9 @@ class ProductObserver
      */
     public function created(Product $product)
     {
+        // Obtenemos el precio total del producto
         $price = $product->price * $product->quantity;
+        // Una vez obtenido se incrementará el precio al total del Invoice
         Invoice::where('id',$product->invoice_id)->increment('total',$price);
     }
 
